@@ -5,17 +5,10 @@ using System.Text;
 
 namespace RabbitMQProcessing.Core.Bus.Abstractions
 {
-    public interface IEventBus<T, TH> where T : DefaultEvent where TH : IEventHandler<T>
+    public interface IEventBus
     {
-        void Publish(T @event);
-        void Subscribe();
-        void Unsubscribe();
+        void Publish(DefaultEvent @event);
+        void Subscribe<T, TH>() where T : DefaultEvent where TH : IEventHandler<T>;
+        void Unsubscribe<T, TH>() where T : DefaultEvent where TH : IEventHandler<T>;
     }
-
-    //public interface IEventBus
-    //{
-    //    void Publish(DefaultEvent @event);
-    //    void Subscribe()<T, TH> where T : DefaultEvent where TH : IEventHandler<T>;
-    //    void Unsubscribe()<T, TH> where T : DefaultEvent where TH : IEventHandler<T>;
-    //}
 }

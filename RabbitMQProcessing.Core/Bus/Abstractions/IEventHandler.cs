@@ -15,4 +15,8 @@ namespace RabbitMQProcessing.Core.Bus.Abstractions
     {
     }
 
+    public interface IDynamicEventHandler
+    {
+        Task Handle(dynamic @event);
+    }
 }

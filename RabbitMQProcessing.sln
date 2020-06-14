@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQProcessing.Service.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{60FAB0B0-BFBF-427E-8B9F-4876544B7CBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQProcessing.Service.MainController", "services\RabbitMQProcessing.Service.MainController\RabbitMQProcessing.Service.MainController.csproj", "{CDB5C8E3-587D-4EA2-A156-B58A21214AD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQProcessing.Service.MainController", "services\RabbitMQProcessing.Service.MainController\RabbitMQProcessing.Service.MainController.csproj", "{CDB5C8E3-587D-4EA2-A156-B58A21214AD7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleSendReceive", "SimpleSendReceive", "{4FD79745-9AB6-41FE-9BFD-23190E28F5A8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventSubscription", "EventSubscription", "{F40FDA99-CB89-4CAF-AC6E-7FED387CF169}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQProcessing.EventBus", "services\RabbitMQProcessing.EventBus\RabbitMQProcessing.EventBus.csproj", "{DEFAFEE4-36E0-450A-A0E2-08FB6E49DF87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{CDB5C8E3-587D-4EA2-A156-B58A21214AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDB5C8E3-587D-4EA2-A156-B58A21214AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDB5C8E3-587D-4EA2-A156-B58A21214AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEFAFEE4-36E0-450A-A0E2-08FB6E49DF87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEFAFEE4-36E0-450A-A0E2-08FB6E49DF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEFAFEE4-36E0-450A-A0E2-08FB6E49DF87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEFAFEE4-36E0-450A-A0E2-08FB6E49DF87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{CDB5C8E3-587D-4EA2-A156-B58A21214AD7} = {4FD79745-9AB6-41FE-9BFD-23190E28F5A8}
 		{4FD79745-9AB6-41FE-9BFD-23190E28F5A8} = {69169A81-AC3A-4141-970C-E52AD431C5F1}
 		{F40FDA99-CB89-4CAF-AC6E-7FED387CF169} = {69169A81-AC3A-4141-970C-E52AD431C5F1}
+		{DEFAFEE4-36E0-450A-A0E2-08FB6E49DF87} = {F40FDA99-CB89-4CAF-AC6E-7FED387CF169}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBA82971-C2D0-4AFE-A499-9D0E3817D5C1}
